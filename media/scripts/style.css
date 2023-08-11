@@ -1,0 +1,34 @@
+		.code {
+					white-space : pre;
+				}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .mb-4 {
+    margin-bottom: 4px; /* Add margin to separate each item */
+  }
+
+  .mr-4 {
+    margin-right: 4px; /* Adjust the spacing between icon and text */
+  }
+
+  img {
+    width: 50px; /* Adjust the icon width as per your requirement */
+    height: 50px; /* Adjust the icon height as per your requirement */
+  }
+ ul ul {
+      display: none;
+    }
+
+    /* Show nested lists when parent li is active */
+    li.active > ul {
+      display: block;
+    }
+
+    /* Add a pointer cursor for clickable items */
+    li {
+      cursor: pointer;
+    }

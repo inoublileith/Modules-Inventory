@@ -1,0 +1,31 @@
+// show a command 	
+
+
+	context.subscriptions.push(
+    vscode.commands.registerCommand('vstodo.helloWorld', () => {
+      vscode.window.showInformationMessage('Hello  from VStodo!');
+    })
+  );
+	context.subscriptions.push(vscode.commands.registerCommand('vstodo.askQuestion',async () => {
+   const answer = await vscode.window.showInformationMessage('How was your day?','good','bad');
+					if (answer === 'bad')
+					{
+						 vscode.window.showInformationMessage(
+             'sorry to hear that'
+             );
+					}
+					else
+					{
+						 vscode.window.showInformationMessage('good to hear that');
+					}
+  }));
+
+
+
+// add the command in packaje.json 
+
+ {
+        "command": "vstodo.askQuestion",
+        "category": "VStodo",
+        "title": "Answer Question"
+      }

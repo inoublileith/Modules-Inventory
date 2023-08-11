@@ -1,0 +1,482 @@
+     
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .mb-4 {
+    margin-bottom: 4px; /* Add margin to separate each item */
+  }
+
+  .mr-4 {
+    margin-right: 4px; /* Adjust the spacing between icon and text */
+  }
+
+
+ ul ul {
+      display: none;
+    }
+
+    /* Show nested lists when parent li is active */
+    li.active > ul {
+      display: block;
+    }
+
+    /* Add a pointer cursor for clickable items */
+    li {
+      cursor: pointer;
+     
+    }
+    .hoverable {
+ 
+ 
+  
+  transition: background-color 0.3s; /* Add a smooth transition effect */
+}
+
+/* Styles for li elements when hovered */
+.hoverable:hover {
+  background-color: rgb(82, 91, 94); /* Change background color on hover */
+}
+    .composite {
+    height: 100%;
+        position: relative;
+        font-size: 13px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+        background-color: rgba(83, 89, 93, 0.5);
+    display: none;
+    font-size: 13px;
+}
+
+.suggest-input-container {
+    padding: 2px 6px;
+    border-radius: 2px;
+    background-color: var(--vscode-input-background);
+    color: var(--vscode-input-foreground);
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--vscode-input-border, transparent);
+      
+}
+.input-container {
+  display: flex;
+  align-items: left; /* This centers the input vertically, adjust as needed */
+    
+    width: 100%;
+    height: 100%;
+  
+}
+
+/* Optionally, you can add some spacing between the input and the container's edge */
+.input-container input {
+  margin-left: 0px; /* Adjust this value as needed */
+}
+.monaco-pane-view {
+    width: 100%;
+    height: 100%;
+}
+.monaco-split-view2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.monaco-split-view2>.sash-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+.monaco-split-view2>.sash-container>.monaco-sash {
+    pointer-events: auto;
+}
+.monaco-sash.horizontal {
+    cursor: ns-resize;
+    left: 0;
+    width: 100%;
+    height: var(--vscode-sash-size);
+}
+.monaco-sash.disabled {
+    cursor: default!important;
+    pointer-events: none!important;
+}
+.monaco-sash {
+    position: absolute;
+    z-index: 35;
+    touch-action: none;
+}
+.monaco-sash.horizontal>.orthogonal-drag-handle.end {
+    top: calc(var(--vscode-sash-size)*-0.5);
+    right: calc(var(--vscode-sash-size)*-1);
+}
+.monaco-list-row {
+   
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+    
+}
+.monaco-list.mouse-support .monaco-list-row {
+    cursor: pointer;
+    touch-action: none;
+}
+.detail{
+ margin-left: 10px;
+}
+.search-box {
+	background-color: var(--vscode-input-background);
+    color: var(--vscode-input-foreground);
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--vscode-input-border, transparent);
+        padding: 2px 6px;
+    border-radius: 2px;
+}
+.icon{
+   
+    padding-left: 0px;
+    visibility: inherit;
+    object-fit: contain;
+    width: 61.602px;
+height: 82px;
+flex-shrink: 0;
+}
+.extension-list-item {
+ 
+    width: 100%;
+    height: 100%;
+    
+    overflow: hidden;
+    display: flex;
+}
+.name {
+    font-weight: 700;
+    flex: 1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.details {
+    flex: 1;
+    display: flex;
+    /* overflow: hidden; */
+    flex-direction: column;
+    justify-content: center; 
+}
+.header-container {
+    height: 19px;
+    display: flex;
+    overflow: hidden;
+    padding-right: 11px;
+}
+.header-input {
+    height: 41px;
+    box-sizing: border-box;
+    padding: 5px 12px 6px 20px;
+  
+     
+}
+.header {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    flex: 1;
+    min-width: 0;
+    
+}
+.activation-status:not(:empty) .codicon {
+    margin-right: 2px;
+}
+.description {
+    padding-right: 11px;
+    line-height: normal;
+    color: var(--vscode-descriptionForeground);
+}
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 7px;
+    height: 18px;
+    overflow: hidden;
+}
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.author {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.monaco-action-bar {
+    margin-right: 4px;
+}
+.monaco-workbench .codicon {
+    color: var(--vscode-icon-foreground);
+}
+.codicon.codicon-extensions-verified-publisher {
+    color: #40a6ff;
+}
+.publisher-name {
+    color: unset;
+}
+.codicon[class*=codicon-] {
+    font: normal normal normal 16px/1 codicon;
+    display: inline-block;
+    text-decoration: none;
+    text-rendering: auto;
+    text-align: center;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.monaco-workbench .codicon[class*=codicon-] {
+    font-size: 16px;
+}
+.extension-verified-publisher {
+    display: flex;
+    align-items: center;
+}
+.publisher-name:not(:first-child) {
+    padding-left: 1px;
+}
+.publisher-name {
+    font-size: 90%;
+    color: var(--vscode-descriptionForeground);
+    font-weight: 600;
+}
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+ .activationTime{
+    margin-right: 2px;
+}
+.monaco-action-bar {
+    white-space: nowrap;
+    height: 100%;
+  margin-right: 4px;
+}
+ .actions-container {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+        flex-wrap: wrap-reverse;
+}
+.action-item.disabled {
+    min-width: 0;
+    cursor: default;
+        display: block;
+    align-items: center;
+    justify-content: center;
+   
+    position: relative;
+}
+ .action-item {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+.actions-container>.action-item.disabled {
+    min-width: 0;
+}
+.action-item:not(.action-dropdown-item)>.extension-action {
+    margin-left: 6px;
+}
+.action-item.disabled {
+    min-width: 0;
+        cursor: default;
+        display: block;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+.extension-list-item .monaco-action-bar>.actions-container>.action-item:not(.action-dropdown-item)>.extension-action {
+    margin-left: 6px;
+}
+.monaco-action-bar .action-item .action-label.extension-action.icon, .monaco-action-bar .action-item:not(.disabled) .action-label.extension-action.label, .monaco-action-bar .action-item:not(.disabled) .action-label.extension-action.text {
+    margin-top: 2px;
+}
+.monaco-action-bar .action-item .action-label.extension-action:not(.disabled) {
+    border: 1px solid var(--vscode-contrastBorder);
+}
+.monaco-action-bar .action-item .action-label.extension-action {
+    line-height: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.extension-list-item .monaco-action-bar .action-label.icon {
+    padding: 1px 2px;
+}
+.monaco-workbench .codicon[class*=codicon-] {
+    font-size: 16px;
+}
+.monaco-action-bar .action-item .codicon {
+    display: flex;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+}
+.monaco-action-bar .action-item .codicon, .monaco-action-bar .action-item .icon {
+    display: block;
+}
+.monaco-workbench .codicon {
+    color: var(--vscode-icon-foreground);
+}
+.codicon[class*=codicon-] {
+    font: normal normal normal 16px/1 codicon;
+    display: inline-block;
+    text-decoration: none;
+    text-rendering: auto;
+    text-align: center;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.action-label {
+    display: flex;
+    font-size: 11px;
+    padding: 3px;
+    border-radius: 5px;
+}
+.monaco-workbench a {
+    text-decoration: none;
+}
+.pane-header {
+    border-top: none!important;
+       height: 22px;
+    font-size: 11px;
+    font-weight: 700;
+    overflow: hidden;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+        justify-content: flex-start;
+
+      position: relative;
+}
+
+
+.pane-header>.codicon:first-of-type {
+    margin: 0 2px;
+}
+.pane-header>.codicon[class*=codicon-] {
+    font-size: 16px;
+}
+.pane-header>.codicon {
+    color: var(--vscode-icon-foreground);
+}
+.pane-header>.codicon[class*=codicon-] {
+    font: normal normal normal 16px/1 codicon;
+    display: inline-block;
+    text-decoration: none;
+    text-rendering: auto;
+    text-align: center;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.pane-header>.icon {
+    display: none;
+    width: 16px;
+    height: 16px;
+}
+.pane-header h3.title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 11px;
+    min-width: 3ch;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+.monaco-pane-view .pane-header>.title {
+    text-transform: uppercase;
+}
+.actions.show {
+    display: initial;
+        display: none;
+    margin-left: auto;
+        justify-content: flex-end;
+
+}
+.monaco-toolbar {
+    height: 100%;
+        justify-content: flex-end;
+
+}
+.monaco-action-bar {
+    margin-right: 4px;
+    white-space: nowrap;
+    height: 100%;
+        justify-content: flex-end;
+
+}
+.actions-container {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+        justify-content: flex-end;
+
+}
+.count-badge-wrapper {
+    margin-right: 12px;
+      justify-content: flex-end;
+}
+/* .drop{
+    font: normal normal normal 16px/1 codicon;
+    display: inline-block;
+    text-decoration: none;
+    text-rendering: auto;
+    text-align: center;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    user-select: none;
+    -webkit-user-select: none;
+    margin: 0 2px;
+        font-size: 16px;
+            color: var(--vscode-icon-foreground);
+} */
+.monaco-count-badge {
+    padding: 3px 6px;
+    border-radius: 11px;
+    font-size: 11px;
+    min-width: 18px;
+    min-height: 18px;
+    line-height: 11px;
+    font-weight: 400;
+    text-align: right;
+    display: inline-block;
+    box-sizing: border-box;
+        background-color: var(--vscode-badge-background);
+    color: var(--vscode-badge-foreground);
+    border: 1px solid var(--vscode-contrastBorder);
+      justify-content: flex-end;
+}

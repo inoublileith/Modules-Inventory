@@ -1,0 +1,73 @@
+.component-row {
+  display: grid;
+  grid-template-columns: 0.4fr 4fr 1fr;
+    /* border: 2px solid blue; */
+
+}
+.component-row-seconde {
+ display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  padding-top: 0; /* Remove the top padding */
+  padding-bottom: 0%;
+  border: 2px solid blue;
+}
+.component-container .component-row-seconde {
+  margin-top: 0;
+  
+}
+.right-section {
+  margin-left: 600px;
+}
+#data-grid-row,
+#panels-row {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.component-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 1rem;
+  border: 2px solid blue;
+padding: 20px;
+      margin-top: 0; 
+  border-radius: 5px;
+}
+
+.component-container > * {
+  margin: 0.25rem 0;
+}
+
+.component-example {
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.component-example > p {
+  margin-bottom: 0.5rem;
+}
+
+vscode-data-grid,
+vscode-panels {
+  border-radius: 5px;
+}
+.icon {
+  width:100%;
+    height:100%;
+    padding-right: 14px;
+    flex-shrink: 0;
+    object-fit: contain;
+    visibility: inherit;
+        cursor: pointer;
+}
+.top{
+  padding: 0%;
+  margin-top:0%;
+
+}
+
+
+
+		
